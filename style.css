@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #000b1f;
+    padding: 1rem;
+}
+
+h1{
+    color: #ea00d9;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 2px #ff8ff8);
+    animation: neon 2s infinite alternate ease-in-out;
+}
+@keyframes neon {
+    from{
+        filter: drop-shadow(0px 0px 2px #ff8ff8);
+    }
+    to{
+        filter: drop-shadow(4px 4px 8px #ff8ff8);
+    }
+}
+
+.subTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h2{
+    margin: 2rem .5rem;
+    display: inline-block;
+    color: #711c91;
+    font-size: 25px;
+    font-weight: 300;
+    border: 3px double #711c91;
+    width: 5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s all;
+    text-align: center;
+}
+h2:hover{
+    color: #0abdc6;
+    text-shadow: 1px 1px 4px #96edf1;
+    border: 3px double #0abdc6;
+    box-shadow: 1px 1px 4px 4px #96edf1;
+}
+
+h3{
+    text-align: center;
+    color: #ffd900;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.neonBox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px double #000b1f;
+    animation: neonBox 5s infinite alternate ease-in-out;
+}
+@keyframes neonBox {
+    0%{
+        border: 3px double #ffd900;
+    }
+    25%{
+        border: 3px double #0abdc6;
+    }
+    50%{
+        border: 3px double #711c91;
+    }
+    75%{
+        border: 3px double #ea00d9;
+    }
+    100%{
+        border: 3px double #ffd900;
+    }
+}
+p{
+    color: #ea00d9;
+    margin: 2rem 1.5rem;
+}
+
+ol{
+    margin: 2rem;
+    color: #0abdc6;
+}
+
+li{
+    margin: 1rem;
+}
+
+li:hover{
+    color: #ffd900;
+}
+
+a{
+    padding: 0 .5rem;
+    text-decoration: none;
+    color: #0abdc6;
+    background-color: #711c91;
+}
