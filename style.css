@@ -29,12 +29,13 @@ h1{
 }
 
 .subTitle{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 h2{
-    margin: 2rem .5rem;
+    margin: 2rem .5rem 0;
     display: inline-block;
     color: #711c91;
     font-size: 25px;
@@ -56,15 +57,12 @@ h2:hover{
 h3{
     text-align: center;
     color: #ffd900;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     font-size: 25px;
 }
 
 .neonBox{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 1rem;
     border: 3px double #000b1f;
     animation: neonBox 5s infinite alternate ease-in-out;
 }
